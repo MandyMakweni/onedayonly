@@ -1,0 +1,164 @@
+/*********---Universal---*********/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#logo{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+#main{
+  padding: 0 7% 7% 7%;
+}
+a{
+  color: black;
+}
+
+h1, h2{
+  font-family: 'Raleway', sans-serif;
+}
+
+p, a{
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+
+/**********---Header----*********/
+#header{
+  width: 100%;
+}
+
+#header #logo{
+  width: 20%
+}
+#logo{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    background-color: #DCDCDC;
+}
+/*Main Page*/
+/*main heading*/
+#main-heading{
+  width: 100%
+}
+
+#main-heading h1{
+  text-align: center;
+  margin-right: 500px;
+
+}
+/* main content*/
+#mid-pic{
+     width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    background-color: #DCDCDC;
+}
+
+/*main content form*/
+.form-field h2, p{
+  text-align: center;
+}
+#sign-up{
+  width: 100%;
+}
+#sign-up label{
+  color: red;
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+#sign-up input[type="text"], input[type="email"]{
+  width: 95.5%;
+  padding: 2%;
+  margin: 6px 0;
+  font-size: 16px;
+  background-color: #DCDCDC;
+  border: 1px solid #DCDCDC;
+}
+#sign-up #submit{
+  width: 100%;
+  padding: 2%;
+  margin: 6px 0;
+  font-size: 16px;
+  background-color: #8a8a8a;
+  border: none;
+}
+
+
+/*************-----Responsiveness---****************/
+
+/*Tablet*/
+@media only screen and (min-width: 601px) and (max-width: 800px){
+  #header #logo{
+    width: 10%
+  }
+}
+@media only screen and (min-width: 800px){
+  #main{
+     padding: 0 3% 3% 3%;
+  }
+  /*logo placeholder*/
+  #header #logo{
+    width: 10%
+  }
+  /*main content*/
+  #main-content{
+    display: flex;
+  }
+  #main-center{
+    width: 60%;
+    margin-right: 3%
+
+  }
+/* form*/
+  .form-field{
+    width: 25%;
+
+
+  }
+  .form-field h2{
+    font-size: 17px;
+  }
+  .form-field p{
+    width: 100%;
+    font-size: 10px;
+  }
+  #sign-up label{
+    font-size: 12px;
+  }
+  #sign-up
+  input[type="text"],
+  input[type="email"],
+  #submit_btn{
+    padding: 1%;
+    margin: 4px 0;
+    font-size: 12px;
+  }
+}
+
+/* Desktop*/
+@media only screen and (min-width: 950px){
+  #main{
+    padding: 0 2% 5% 2%;
+  }
+
+  #header #logo{
+    width: 8%
+  }
+
+  .form-field{
+    margin-top: 5%;
+    margin-top: 15px;
+   margin-left: 40px;
+  }
+
+  .form-field h2{
+    font-size: 22px;
+  }
+ #logo{
+ width:  8%
+ }
+
+}
